@@ -240,7 +240,7 @@ Blockly.JavaScript['pushover'] = function(block) {
 
     const priority = parseInt(block.getFieldValue('PRIORITY'), 10);
     if (priority) {
-        text += '  priority: ' + priority + ',\n';
+        text += '  priority: ' + value + ',\n';
 
         if (priority === 2) {
             text += '  retry: 60,\n';
